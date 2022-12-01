@@ -217,7 +217,7 @@ def main(unused_argv):
         for agent in agents:
           import math
           #agent._rl_agent.alpha = FLAGS.alpha_base*math.pow(iteration+2, 0.5)/math.pow(iteration+1, 1)#*1/math.sqrt(iteration+1)
-          agent._rl_agent.alpha = FLAGS.alpha_base*math.pow(iteration+1, 0.5)/math.pow(iteration+1, 1)#*1/math.sqrt(iteration+1)
+          agent._rl_agent.alpha = FLAGS.alpha_base/math.pow(iteration+1, 1)#*1/math.sqrt(iteration+1)
       if i==0 or (i+1) % FLAGS.print_freq == 0:
         output_str =''
         iteration = int((i+1) /FLAGS.print_freq)
