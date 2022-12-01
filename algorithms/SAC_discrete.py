@@ -139,7 +139,7 @@ class SACDiscrete(rl_agent.AbstractAgent):
                learn_every=10,
                discount_factor=1.0,
                min_buffer_size_to_learn=1000,
-               double_DQN = True,
+               double_DQN = False,
                optimizer_str="sgd"):
     """Initialize the DQN agent."""
 
