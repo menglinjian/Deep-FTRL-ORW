@@ -64,7 +64,6 @@ class DeepFTRLORWagent(rl_agent.AbstractAgent):
                optimizer_str="sgd",
                max_action_prob = True,
                **kwargs):
-    """Initialize the `entropy-NFSP` agent."""
     if not device == "cpu":
       self.device = 'cuda:' + str(device)
     else:
